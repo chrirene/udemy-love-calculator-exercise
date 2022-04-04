@@ -11,7 +11,7 @@ u = name_combined.lower().count("u")
 e = name_combined.lower().count("e")
 
 #count how many "true" alphabets count on the name1 and name2
-x = t + r + u + e
+true = t + r + u + e
 
 
 l = name_combined.lower().count("l")
@@ -20,17 +20,17 @@ v = name_combined.lower().count("v")
 e = name_combined.lower().count("e")
 
 #count how many "love" alphabets count on the name1 and name2
-y = l + o + v + e
+love = l + o + v + e
 
 #total count true and love
-z = int(f"{x}{y}")
+love_score = int(f"{true}{love}")
 
-if z <= 10 or z >= 90:
-  print(f"Your score is {z}, you go together like coke and mentos🌋")
-elif z >= 40 and z <= 50:
-  print(f"Your score is {z}, you are alright together💑")
+if (love_score <= 10) or (love_score >= 90):
+  print(f"Your score is {love_score}, you go together like coke and mentos🌋")
+elif (love_score >= 40) and (love_score <= 50):
+  print(f"Your score is {love_score}, you are alright together💑")
 else:
-  print(f"Your score is {z}, just fine😬")
+  print(f"Your score is {love_score}, just fine😬")
 
 
 
